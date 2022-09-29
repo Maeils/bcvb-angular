@@ -1,0 +1,38 @@
+<mat-grid-list [cols]="containerCol" [rowHeight]="400" (window:resize)="onResize($event)">
+  <mat-grid-tile>
+    <p>Club fondé il y a maintenant plus de 10 ans, nous avons à coeur de permettre au plus
+      grand nombre de pratiquer le volley-ball.
+      Club convivial, le but du BCVB est de jouer au volley-ball dans la bonne humeur
+      afin de permettre aux jeunes et aux moins jeunes d'acquérir les bases et les
+      principes du jeu, mais aussi aux plus expérimentés de perfectionner leurs pratiques
+    </p>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class="divFlex">
+      <ngb-carousel class="carousel">
+        <ng-template ngbSlide *ngFor="let src of carouselSrc">
+          <div style="width: 100%;height: auto;object-fit: cover;">
+            <img class="img-fluid mx-auto d-block " [src]=src
+                 alt="Club du BCVB bois-colombes : Entrainement à Smirlian">
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+<div>
+  <mat-grid-list [cols]="trombinoscopeCol" [rowHeight]="400">
+    <mat-grid-tile *ngFor="let src of staff">
+      <mat-card class="mat-card">
+
+        <img mat-card-image [src]=src.src alt="Photo de {{src.name}}">
+        <mat-card-footer class="mat-card-footer">
+          <mat-card-title>{{src.name}}</mat-card-title>
+          <mat-card-subtitle>{{src.description}}</mat-card-subtitle>
+        </mat-card-footer>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+

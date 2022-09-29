@@ -1,0 +1,29 @@
+.mat-card-footer{
+  text-align: center;
+}
+mat-card {
+  img {
+    height: 300px;
+    width: 250px;
+    @media screen and (max-width: 700px) {
+      height: 200px;
+      width: 150px;
+    }
+  }
+}
+
+ngb-carousel {
+  img{
+    max-height: 100%;
+    max-width: 100%;
+    display:block;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+}
+.carousel{
+  max-height: 80%;
+  max-width: 90%;
+  display:block;
+  margin: 0 auto;
+}
