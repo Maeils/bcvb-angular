@@ -1,8 +1,8 @@
-<mat-tab-group>
+<mat-tab-group xmlns="http://www.w3.org/1999/html">
   <mat-tab label="Jeunes">
     <div>
       <h2 style="text-align: center">Session Jeune</h2>
-      <mat-grid-list [cols]="2" [rowHeight]="400">
+      <mat-grid-list [cols]="breakpoint" [rowHeight]="400" (window:resize)="onResize($event)">
         <mat-grid-tile>
           <p>Section créée pour les jeunes de 8 à 17 ans, afin de leurs permettre de découvrir, avec l'aide de
             Jérémy et Silvio, les bases du volley-ball.
@@ -13,13 +13,20 @@
           </p>
         </mat-grid-tile>
         <mat-grid-tile>
-          <div class="div_adress">
-            <h3>Adresse</h3>
-            <p>Gymnase Max Boy, 92270 Bois-Colombes</p>
-          </div>
-          <div class="div_adress">
-            <h3>Horaires</h3>
-            <p>Mercredi de 18h00 à 20h00</p>
+          <div>
+            <p>Adresse et horaire</p>
+            <div style="display: inline-flex">
+              <div class=div_info>
+                <strong>Le Mercredi :</strong> <br/>
+                <div class="div_adress">
+                  <p>Gymnase Max Boy<br/> 92270 Bois-Colombes</p>
+                </div>
+                <div class="div_adress">
+                  Horaires
+                  <p>18H00-20h00</p>
+                </div>
+              </div>
+            </div>
           </div>
         </mat-grid-tile>
       </mat-grid-list>
@@ -29,7 +36,7 @@
     <div>
       <h2 style="text-align: center">Session Loisir</h2>
     </div>
-    <mat-grid-list [cols]="2" [rowHeight]="400">
+    <mat-grid-list [cols]="breakpoint" [rowHeight]="400" (window:resize)="onResize($event)">
       <mat-grid-tile>
         <div>
           <p>
@@ -51,17 +58,85 @@
         </div>
       </mat-grid-tile>
       <mat-grid-tile>
-        <div class="div_adress">
-          <h3>Adresse</h3>
-          <p>Gymnase Max Boy, 92270 Bois-Colombes</p>
-        </div>
-        <div class="div_adress">
-          <h3>Horaires</h3>
-          <p>Mercredi de 18h00 à 20h00</p>
+        <div>
+          <p>Adresses et horaires</p>
+          <div style="display: inline-flex">
+            <div class=div_info>
+              <strong>Le Mercredi :</strong> <br/>
+              <div class="div_adress">
+                <p>Gymnase Max Boy<br/> 92270 Bois-Colombes</p>
+              </div>
+              <div class="div_adress">
+                Horaires
+                <p>20h15-22h15</p>
+              </div>
+            </div>
+            <div class=div_info>
+              <strong>Le Dimanche :</strong> <br/>
+              <div class="div_adress">
+                <p>Gymnase Smirlian <br/> 92270 Bois-Colombes</p>
+              </div>
+              <div class="div_adress">
+                Horaires
+                <p>18h00-20h00</p>
+              </div>
+            </div>
+          </div>
         </div>
       </mat-grid-tile>
     </mat-grid-list>
   </mat-tab>
   <mat-tab label="Compétitions">
+    <div>
+      <h2 style="text-align: center">Session Compétitions</h2>
+    </div>
+    <mat-grid-list [cols]="breakpoint" [rowHeight]="400" (window:resize)="onResize($event)">
+      <mat-grid-tile>
+        <div>
+          <p>
+            Peut-être la future relève de notre équipe olympique, venez rejoindre une de nos équipes masculines
+            participant au championnant FSGT 95 ou l'équipe féminine qui elle participe au championnat FFVB loisir du 92
+            <br/>
+            <br/>
+            Les différentes équipes
+            <br/>
+            Une équipe 6x6 masculine étant poule 1 du championnat FSGT 95
+            <br/>
+            Une équipe 6x6 masculine étant poule 2 du championnat FSGT 95
+            <br/>
+            Une équipe 4x4 masculine étant poule 2 du championnat FSGT 95
+            <br/>
+            Une équipe 4x4 féminine étant poule 1 du championnat FFVB 92 loisir
+          </p>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div>
+          <p>Adresses et horaires</p>
+          <div style="display: inline-flex">
+            <div class=div_info>
+              <strong>Le Lundi :</strong> <br/>
+              <div class="div_adress">
+                <p>Gymnase Max Boy<br/> 92270 Bois-Colombes</p>
+              </div>
+              <div class="div_adress">
+                Horaires
+                <p>20h15-22h15</p>
+              </div>
+            </div>
+            <div class=div_info>
+              <strong>Le Mercredi :</strong> <br/>
+              <div class="div_adress">
+                <p>Gymnase Smirlian <br/> 92270 Bois-Colombes</p>
+              </div>
+              <div class="div_adress">
+                Horaires
+                <p>20H30-22h30</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
   </mat-tab>
 </mat-tab-group>

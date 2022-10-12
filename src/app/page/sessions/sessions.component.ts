@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sessions.component.scss']
 })
 export class SessionsComponent implements OnInit {
+  breakpoint: number;
 
-  constructor() { }
+  constructor() {
+    this.breakpoint  = 2
+  }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.breakpoint = (window.innerWidth <= 400) ? 1 : 2;
+  }
+
+  onResize(event : any) {
+    this.breakpoint = (event.target.innerWidth <= 400) ? 1 : 2;
   }
 
 }
