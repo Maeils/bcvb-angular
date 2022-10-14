@@ -1,0 +1,22 @@
+<div class="example-container mat-elevation-z8">
+  <table mat-table [dataSource]="matchDescriptions" class="mat-elevation-z8">
+    <ng-container matColumnDef="MatchDate">
+      <th mat-header-cell *matHeaderCellDef class="match-date">Date</th>
+      <td mat-cell *matCellDef="let element" class="match-date"> {{element.matchDate}} </td>
+    </ng-container>
+    <ng-container matColumnDef="HomeTeam">
+      <th mat-header-cell *matHeaderCellDef>Équipe Domicile</th>
+      <td mat-cell *matCellDef="let element"> {{element.homeTeam}} </td>
+    </ng-container>
+    <ng-container matColumnDef="Score">
+      <th mat-header-cell *matHeaderCellDef class="match-date">Score</th>
+      <td mat-cell *matCellDef="let element" class="match-date"> {{element.score == "" ? "-" : element.score }} </td>
+    </ng-container>
+    <ng-container matColumnDef="VisitorTeam">
+      <th mat-header-cell *matHeaderCellDef>Équipe Visiteuse</th>
+      <td mat-cell *matCellDef="let element"> {{element.visitorTeam}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row [ngClass]="getClass(row)" *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

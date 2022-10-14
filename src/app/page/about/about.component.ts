@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ImageService, StaffDescription} from "../../image.service";
+import {ImageService, StaffDescription} from "../../services/image.service";
 
 @Component({
   selector: 'app-about',
@@ -12,16 +12,14 @@ export class AboutComponent implements OnInit {
 
   containerCol: number;
   trombinoscopeCol: number;
-  imageService: ImageService;
   staff: StaffDescription[];
   carouselSrc: string[];
 
   constructor(imageService: ImageService) {
-    this.imageService = imageService;
     this.containerCol = 2;
-    this.trombinoscopeCol = 4;
-    this.staff = this.imageService.getStaff();
-    this.carouselSrc = this.imageService.getPictures()
+    this.trombinoscopeCol = 5;
+    this.staff = imageService.getStaff();
+    this.carouselSrc = imageService.getPictures()
   }
 
   ngOnInit() {
@@ -38,7 +36,7 @@ export class AboutComponent implements OnInit {
       this.trombinoscopeCol = 2;
     } else {
       this.containerCol = 2;
-      this.trombinoscopeCol = 4;
+      this.trombinoscopeCol = 5;
     }
   }
 }

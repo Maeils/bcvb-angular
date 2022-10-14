@@ -3,9 +3,11 @@
   flex-direction: column;
   max-height: 500px;
   min-width: 300px;
+  text-align: center;
 }
 
 .mat-table {
+  text-align: center;
   overflow: auto;
   max-height: 500px;
 }
@@ -13,11 +15,25 @@
 .mobile-label {
   display: none;
 }
+
 .mat-row {
-  height: 75px;
+  height: 50px;
 }
 
-.mat-header-cell{
+.victory {
+  background-color: #3d76ef;
+}
+
+.defeat {
+  background-color: #f84242;
+}
+
+.match-date {
+  width: 10%;
+}
+
+.mat-header-cell {
+  text-align: center;
   font-weight: bold;
   font-size: large;
 }

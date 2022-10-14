@@ -1,0 +1,100 @@
+[
+  {
+    "matchDate": "mercredi 19-10-2022",
+    "homeTeam": "Bouffemont A",
+    "score": "3-2",
+    "visitorTeam": "Bois-Colombes A",
+    "victory": false
+  },
+  {
+    "matchDate": "mercredi 16-11-2022",
+    "homeTeam": "Bois-Colombes A",
+    "score": "",
+    "visitorTeam": "Le Thillay B",
+    "victory": false
+  },
+  {
+    "matchDate": "mardi 29-11-2022",
+    "homeTeam": "Mery B",
+    "score": "",
+    "visitorTeam": "Bois-Colombes A",
+    "victory": false
+  },
+  {
+    "matchDate": "mercredi 14-12-2022",
+    "homeTeam": "Bois-Colombes A",
+    "score": "",
+    "visitorTeam": "Mery C",
+    "victory": false
+  },
+  {
+    "matchDate": "mercredi 11-01-2023",
+    "homeTeam": "Bouffemont A",
+    "score": "",
+    "visitorTeam": "Bois-Colombes A",
+    "victory": false
+  },
+  {
+    "matchDate": "mercredi 25-01-2023",
+    "homeTeam": "Bois-Colombes A",
+    "score": "",
+    "visitorTeam": "Le Thillay A",
+    "victory": false
+  },
+  {
+    "matchDate": "lundi 06-02-2023",
+    "homeTeam": "Luzarches A",
+    "score": "",
+    "visitorTeam": "Bois-Colombes A",
+    "victory": false
+  },
+  {
+    "matchDate": "mercredi 08-03-2023",
+    "homeTeam": "Bois-Colombes A",
+    "score": "",
+    "visitorTeam": "Bouffemont A",
+    "victory": false
+  },
+  {
+    "matchDate": "lundi 20-03-2023",
+    "homeTeam": "Le Thillay B",
+    "score": "",
+    "visitorTeam": "Bois-Colombes A",
+    "victory": false
+  },
+  {
+    "matchDate": "mercredi 05-04-2023",
+    "homeTeam": "Bois-Colombes A",
+    "score": "",
+    "visitorTeam": "Mery B",
+    "victory": false
+  },
+  {
+    "matchDate": "lundi 17-04-2023",
+    "homeTeam": "Mery C",
+    "score": "",
+    "visitorTeam": "Bois-Colombes A",
+    "victory": false
+  },
+  {
+    "matchDate": "mercredi 24-05-2023",
+    "homeTeam": "Bois-Colombes A",
+    "score": "",
+    "visitorTeam": "Plessis-Bouchard A",
+    "victory": false
+  },
+  {
+    "matchDate": "mercredi 07-06-2023",
+    "homeTeam": "Le Thillay A",
+    "score": "",
+    "visitorTeam": "Bois-Colombes A",
+    "victory": false
+  },
+  {
+    "matchDate": "mercredi 21-06-2023",
+    "homeTeam": "Bois-Colombes A",
+    "score": "",
+    "visitorTeam": "Luzarches A",
+    "victory": false
+  }
+]

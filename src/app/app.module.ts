@@ -14,13 +14,25 @@ import {MatDividerModule} from "@angular/material/divider";
 import {MatTabsModule} from "@angular/material/tabs";
 import {MatMenuModule} from "@angular/material/menu";
 import { SessionsComponent } from './page/sessions/sessions.component';
+import {MatButtonModule} from "@angular/material/button";
+import { ResultsComponent } from './page/results/results.component';
+import {MatListModule} from "@angular/material/list";
+import {MatTableModule} from "@angular/material/table";
+import { MatchTableComponent } from './shared/match-table/match-table.component';
+import {MatIconModule} from "@angular/material/icon";
+import { ContactComponent } from './page/contact/contact.component';
+import { ShopComponent } from './page/shop/shop.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     InscriptionComponent,
-    SessionsComponent
+    SessionsComponent,
+    ResultsComponent,
+    MatchTableComponent,
+    ContactComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +48,10 @@ import { SessionsComponent } from './page/sessions/sessions.component';
     ]),
     MatTabsModule,
     MatMenuModule,
+    MatButtonModule,
+    MatListModule,
+    MatTableModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -25,23 +25,19 @@ export class ImageService {
       new StaffDescription("Olivier", "Président / Compétitions", "assets/trombinoscope/olivier.jpg"),
       new StaffDescription("Frédérique", "Trésorière / Loisirs", "assets/trombinoscope/frederic.jpg"),
       new StaffDescription("Estelle", "Trésorière / Compétitions", "assets/trombinoscope/estelle.jpg"),
-      new StaffDescription("Silvio", "Secrétaire / Compétitions", "assets/trombinoscope/silvio.png"),
+      new StaffDescription("Silvio", "Secrétaire / Compétitions", "assets/trombinoscope/silvio.jpg"),
       new StaffDescription("Yann", "Communication / Compétitions", "assets/trombinoscope/yann.jpg"),
-      new StaffDescription("Mégane", "Communication / Loisirs", "assets/trombinoscope/sloanne.png"),
-      new StaffDescription("Jérémie", "Entraineur jeune", "assets/trombinoscope/yann.png"),
-      new StaffDescription("Stéphane", "Compétitions", "assets/trombinoscope/frederic.jpg"),
-      new StaffDescription("Matthieu", "Compétitions", "assets/trombinoscope/matthieu.png")
+      new StaffDescription("Mégane", "Communication / Loisirs", "assets/trombinoscope/megane.png"),
+      new StaffDescription("Jérémie", "Entraineur jeune", "assets/trombinoscope/jeremie.png"),
+      new StaffDescription("Stéphane", "Compétitions", "assets/trombinoscope/stephane.png"),
+      new StaffDescription("Matthieu", "Compétitions", "assets/trombinoscope/matthieu.jpg")
     ];
   }
 
   getPictures() {
     return [
-      // "https://photobcvb.s3.eu-west-3.amazonaws.com/image1.jpeg",
-      "https://photobcvb.s3.eu-west-3.amazonaws.com/image2.jpeg",
-      "https://photobcvb.s3.eu-west-3.amazonaws.com/image3.jpeg",
-      // "https://photobcvb.s3.eu-west-3.amazonaws.com/image4.jpeg",
-      "https://photobcvb.s3.eu-west-3.amazonaws.com/image5.jpeg"
-
+      "assets/photos/1.jpg",
+      "assets/photos/2.jpg"
     ]
   }
 

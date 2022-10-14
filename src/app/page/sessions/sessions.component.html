@@ -1,142 +1,24 @@
-<mat-tab-group xmlns="http://www.w3.org/1999/html">
-  <mat-tab label="Jeunes">
-    <div>
-      <h2 style="text-align: center">Session Jeune</h2>
-      <mat-grid-list [cols]="breakpoint" [rowHeight]="400" (window:resize)="onResize($event)">
-        <mat-grid-tile>
-          <p>Section créée pour les jeunes de 8 à 17 ans, afin de leurs permettre de découvrir, avec l'aide de
-            Jérémy et Silvio, les bases du volley-ball.
-            <br/>
-            <br/>
-            N'oubliez pas de vous équiper de chaussures adaptées à mettre sur place et d'une bouteille
-            d'eau.
-          </p>
-        </mat-grid-tile>
-        <mat-grid-tile>
-          <div>
-            <p>Adresse et horaire</p>
-            <div style="display: inline-flex">
-              <div class=div_info>
-                <strong>Le Mercredi :</strong> <br/>
-                <div class="div_adress">
-                  <p>Gymnase Max Boy<br/> 92270 Bois-Colombes</p>
-                </div>
-                <div class="div_adress">
-                  Horaires
-                  <p>18H00-20h00</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </mat-grid-tile>
-      </mat-grid-list>
-    </div>
-  </mat-tab>
-  <mat-tab label="Loisirs">
-    <div>
-      <h2 style="text-align: center">Session Loisir</h2>
-    </div>
-    <mat-grid-list [cols]="breakpoint" [rowHeight]="400" (window:resize)="onResize($event)">
-      <mat-grid-tile>
-        <div>
-          <p>
-            Rendez-vous pour les plus grands.<br/>
-            Débutant ou plus expérimenté, si vous chercher à vous défouler, cette section est
-            faite pour vous !<br/><br/>
+<div class="example-container mat-elevation-z8">
+  <table mat-table [dataSource]="TRAINING_INFOS" class="mat-elevation-z8">
+    <ng-container matColumnDef="Sessions">
+      <th mat-header-cell *matHeaderCellDef> Sessions</th>
+      <td mat-cell *matCellDef="let element"> {{element.type}} </td>
 
-            <strong>Le Mercredi :</strong> <br/>
-            Entrainement animé par Jeremy, cette séance permet aux débutants d'apprendre les bases du
-            volley.<br/><br/>
-            <strong>Le Dimanche : </strong><br/>
-            Session libre, cette séance est accessible sur inscription via l'application SportMember.
+    </ng-container>
+    <ng-container matColumnDef="Jour">
+      <th mat-header-cell *matHeaderCellDef> Jour</th>
+      <td mat-cell *matCellDef="let element"> {{element.day}} </td>
+    </ng-container>
+    <ng-container matColumnDef="Horaire">
+      <th mat-header-cell *matHeaderCellDef> Horaire</th>
+      <td mat-cell *matCellDef="let element"> {{element.hour}} </td>
 
-            <br/>
-            <br/>
-            N'oubliez pas d'apporter une paire de chaussures adaptées à mettre une fois dans le gymnase
-            ainsi que votre bonne humeur.
-          </p>
-        </div>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <div>
-          <p>Adresses et horaires</p>
-          <div style="display: inline-flex">
-            <div class=div_info>
-              <strong>Le Mercredi :</strong> <br/>
-              <div class="div_adress">
-                <p>Gymnase Max Boy<br/> 92270 Bois-Colombes</p>
-              </div>
-              <div class="div_adress">
-                Horaires
-                <p>20h15-22h15</p>
-              </div>
-            </div>
-            <div class=div_info>
-              <strong>Le Dimanche :</strong> <br/>
-              <div class="div_adress">
-                <p>Gymnase Smirlian <br/> 92270 Bois-Colombes</p>
-              </div>
-              <div class="div_adress">
-                Horaires
-                <p>18h00-20h00</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </mat-grid-tile>
-    </mat-grid-list>
-  </mat-tab>
-  <mat-tab label="Compétitions">
-    <div>
-      <h2 style="text-align: center">Session Compétitions</h2>
-    </div>
-    <mat-grid-list [cols]="breakpoint" [rowHeight]="400" (window:resize)="onResize($event)">
-      <mat-grid-tile>
-        <div>
-          <p>
-            Peut-être la future relève de notre équipe olympique, venez rejoindre une de nos équipes masculines
-            participant au championnant FSGT 95 ou l'équipe féminine qui elle participe au championnat FFVB loisir du 92
-            <br/>
-            <br/>
-            Les différentes équipes
-            <br/>
-            Une équipe 6x6 masculine étant poule 1 du championnat FSGT 95
-            <br/>
-            Une équipe 6x6 masculine étant poule 2 du championnat FSGT 95
-            <br/>
-            Une équipe 4x4 masculine étant poule 2 du championnat FSGT 95
-            <br/>
-            Une équipe 4x4 féminine étant poule 1 du championnat FFVB 92 loisir
-          </p>
-        </div>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <div>
-          <p>Adresses et horaires</p>
-          <div style="display: inline-flex">
-            <div class=div_info>
-              <strong>Le Lundi :</strong> <br/>
-              <div class="div_adress">
-                <p>Gymnase Max Boy<br/> 92270 Bois-Colombes</p>
-              </div>
-              <div class="div_adress">
-                Horaires
-                <p>20h15-22h15</p>
-              </div>
-            </div>
-            <div class=div_info>
-              <strong>Le Mercredi :</strong> <br/>
-              <div class="div_adress">
-                <p>Gymnase Smirlian <br/> 92270 Bois-Colombes</p>
-              </div>
-              <div class="div_adress">
-                Horaires
-                <p>20H30-22h30</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </mat-grid-tile>
-    </mat-grid-list>
-  </mat-tab>
-</mat-tab-group>
+    </ng-container>
+    <ng-container matColumnDef="Gymnase">
+      <th mat-header-cell *matHeaderCellDef> Gymnase</th>
+      <td mat-cell *matCellDef="let element"> {{element.location}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

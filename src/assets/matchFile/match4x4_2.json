@@ -1,0 +1,100 @@
+[
+  {
+    "matchDate": "mercredi 19-10-2022",
+    "homeTeam": "Le Thillay D",
+    "score": "",
+    "visitorTeam": "Bois-Colombes B",
+    "victory": false
+  },
+  {
+    "matchDate": "lundi 14-11-2022",
+    "homeTeam": "Mery D",
+    "score": "",
+    "visitorTeam": "Bois-Colombes B",
+    "victory": false
+  },
+  {
+    "matchDate": "lundi 28-11-2022",
+    "homeTeam": "Bois-Colombes B",
+    "score": "",
+    "visitorTeam": "Bezons A",
+    "victory": false
+  },
+  {
+    "matchDate": "lundi 12-12-2022",
+    "homeTeam": "Bois-Colombes B",
+    "score": "",
+    "visitorTeam": "Marly C",
+    "victory": false
+  },
+  {
+    "matchDate": "jeudi 12-01-2023",
+    "homeTeam": "Chambly B",
+    "score": "",
+    "visitorTeam": "Bois-Colombes B",
+    "victory": false
+  },
+  {
+    "matchDate": "mercredi 25-01-2023",
+    "homeTeam": "Bouffemont B",
+    "score": "",
+    "visitorTeam": "Bois-Colombes B",
+    "victory": false
+  },
+  {
+    "matchDate": "lundi 06-02-2023",
+    "homeTeam": "Bois-Colombes B",
+    "score": "",
+    "visitorTeam": "Montigny B",
+    "victory": false
+  },
+  {
+    "matchDate": "lundi 06-03-2023",
+    "homeTeam": "Bois-Colombes B",
+    "score": "",
+    "visitorTeam": "Le Thillay D",
+    "victory": false
+  },
+  {
+    "matchDate": "lundi 20-03-2023",
+    "homeTeam": "Bois-Colombes B",
+    "score": "",
+    "visitorTeam": "Mery D",
+    "victory": false
+  },
+  {
+    "matchDate": "lundi 03-04-2023",
+    "homeTeam": "Bezons A",
+    "score": "",
+    "visitorTeam": "Bois-Colombes B",
+    "victory": false
+  },
+  {
+    "matchDate": "jeudi 20-04-2023",
+    "homeTeam": "Marly C",
+    "score": "",
+    "visitorTeam": "Bois-Colombes B",
+    "victory": false
+  },
+  {
+    "matchDate": "lundi 22-05-2023",
+    "homeTeam": "Bois-Colombes B",
+    "score": "",
+    "visitorTeam": "Chambly B",
+    "victory": false
+  },
+  {
+    "matchDate": "lundi 05-06-2023",
+    "homeTeam": "Bois-Colombes B",
+    "score": "",
+    "visitorTeam": "Bouffemont B",
+    "victory": false
+  },
+  {
+    "matchDate": "lundi 19-06-2023",
+    "homeTeam": "Montigny B",
+    "score": "",
+    "visitorTeam": "Bois-Colombes B",
+    "victory": false
+  }
+]

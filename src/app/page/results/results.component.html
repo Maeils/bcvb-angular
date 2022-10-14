@@ -1,0 +1,26 @@
+<mat-tab-group xmlns="http://www.w3.org/1999/html">
+  <mat-tab label="6X6 1">
+    <div>
+      <h2 style="text-align: center">Équipe 6X6 1</h2>
+    </div>
+    <app-match-table [matchDescriptions]="match6x6A"></app-match-table>
+  </mat-tab>
+  <mat-tab label="6X6 2">
+    <div>
+      <h2 style="text-align: center">Équipe 6X6 2</h2>
+    </div>
+    <app-match-table [matchDescriptions]="match6x6B"></app-match-table>
+  </mat-tab>
+  <mat-tab label="4X4 A">
+    <div>
+      <h2 style="text-align: center">Équipe 4X4 A</h2>
+    </div>
+    <app-match-table [matchDescriptions]="match4x4A"></app-match-table>
+  </mat-tab>
+  <mat-tab label="4X4 B">
+    <div>
+      <h2 style="text-align: center">Équipe 4X4 B</h2>
+    </div>
+    <app-match-table [matchDescriptions]="match4x4B"></app-match-table>
+  </mat-tab>
+</mat-tab-group>
